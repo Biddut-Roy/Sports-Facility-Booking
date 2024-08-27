@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Footer from "../page/footer/Footer";
+import Landing from "../Layout/LandingPage/Landing";
 
 const router = createBrowserRouter([
   {
@@ -8,8 +8,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "contact",
-        element: <Footer />,
+        path: "/",
+        element: <Landing />,
       },
     ],
   },
