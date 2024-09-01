@@ -5,7 +5,7 @@ const Footer = () => {
         <div className=" px-4 flex flex-wrap justify-between ">
           {/* Logo and Description */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">SportBook</h2>
+            <h2 className="text-2xl font-bold mb-4">SportBooking</h2>
             <p>
               The world’s leading online sports booking & scheduling platform.
             </p>
