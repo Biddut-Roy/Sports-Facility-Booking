@@ -1,3 +1,4 @@
+import BookingPage from "../../page/Booking/BookingPage";
 import Contact from "../../page/Contact/Contact";
 import Hero from "../../page/Hero/Hero";
 import Login from "../../page/Login/Login";
@@ -8,6 +9,7 @@ const Landing = () => {
     <div>
       <Hero />
       <Login />
+      <BookingPage />
       <Testimonial />
       <Contact />
     </div>
