@@ -10,7 +10,7 @@ const Hero = () => {
               </div>
               <div>
                 <img
-                  src="https://image.flaticon.com/icons/svg/497/497348.svg"
+                  src="https://i.ibb.co/87mCBQS/sport.jpg"
                   alt=""
                   className="w-8"
                 />
@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
         </div>
         <img
-          src="https://images.unsplash.com/photo-1536147116438-62679a5e01f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          src="https://i.ibb.co/87mCBQS/sport.jpg"
           alt="Leafs"
           className="w-full h-48 object-cover sm:h-screen sm:w-4/12"
         />
