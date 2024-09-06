@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="container mx-auto h-full sm:p-10">
             <nav className="flex px-4 justify-between items-center">
               <div className="text-4xl font-bold">
-                Plant<span className="text-green-700">.</span>
+                Sport<span className="text-green-700">.</span>
               </div>
               <div>
                 <img
@@ -19,18 +19,17 @@ const Hero = () => {
             <header className="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
               <div className="w-full">
                 <h1 className="text-4xl lg:text-6xl font-bold">
-                  Find your <span className="text-green-700">greeny</span> stuff
-                  for your room
+                  Find your <span className="text-green-700">sports</span>{" "}
+                  grounds and facilities, along the foreshore.
                 </h1>
                 <div className="w-20 h-2 bg-green-700 my-4"></div>
                 <p className="text-xl mb-10">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae maiores neque eaque ea odit placeat, tenetur illum
-                  distinctio nulla voluptatum a corrupti beatae tempora aperiam
-                  quia id aliquam possimus aut.
+                  Our bookings portal will show you when venues are available
+                  and get a price estimate. You can upload the information we
+                  need to make your booking experience as smooth as possible.
                 </p>
                 <button className="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow">
-                  Learn More
+                  Book Now
                 </button>
               </div>
             </header>
