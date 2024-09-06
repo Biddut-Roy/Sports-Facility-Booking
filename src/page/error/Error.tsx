@@ -1,6 +1,6 @@
 const Error = () => {
   return (
-    <div className="bg-gradient-to-r from-slate-200 to-gray-200 dark:from-gray-800 dark:to-gray-900 text-black dark:text-white ">
+    <div className="bg-gradient-to-r from-slate-200 to-gray-200 dark:from-gray-800 dark:to-gray-900 text-black dark:text-white w-[100vw]">
       <div className="flex items-center justify-center min-h-screen px-2">
         <div className="text-center">
           <h1 className="text-9xl font-bold">404</h1>
