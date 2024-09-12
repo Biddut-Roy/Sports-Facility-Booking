@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -201,9 +202,8 @@ const Register = () => {
             </form>
           </div>
           <div className="flex justify-center items-center mt-6">
-            <a
-              href="#"
-              target="_blank"
+            <NavLink
+              to="/login"
               className="inline-flex items-center font-bold text-blue-500 hover:text-blue-700 text-xs text-center"
             >
               <span>
@@ -220,7 +220,7 @@ const Register = () => {
                 </svg>
               </span>
               <span className="ml-2">Already have an account?</span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

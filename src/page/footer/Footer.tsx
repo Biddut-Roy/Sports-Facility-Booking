@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="sm:px-0 md:px-5 lg:px-20">
@@ -10,18 +12,18 @@ const Footer = () => {
               The world’s leading online sports booking & scheduling platform.
             </p>
             {/* <div className="flex space-x-4 mt-4">
-              <a href="#" aria-label="Facebook">
+              <NavLink to={"/"} aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" aria-label="Instagram">
+              </NavLink>
+              <NavLink to={"/"} aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" aria-label="Twitter">
+              </NavLink>
+              <NavLink to={"/"} aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" aria-label="LinkedIn">
+              </NavLink>
+              <NavLink to={"/"} aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in"></i>
-              </a>
+              </NavLink>
             </div> */}
           </div>
 
@@ -30,34 +32,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   About us
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Features
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Pricing
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
-                  Sports Training
-                </a>
-              </li>
-              <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   Sports Facilities
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/register"} className="hover:underline">
                   Register
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -67,24 +54,24 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
             <ul>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   Terms of Services
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   Privacy Policy
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   Documentation
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a href="#" className="hover:underline">
+                <NavLink to={"/"} className="hover:underline">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -113,9 +100,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-10">
-          <a href="#top" className="text-purple-500 hover:text-purple-700">
+          <NavLink to="#top" className="text-purple-500 hover:text-purple-700">
             <i className="fas fa-arrow-up"></i>
-          </a>
+          </NavLink>
         </div>
       </footer>
     </div>

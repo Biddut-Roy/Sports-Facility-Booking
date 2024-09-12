@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Login = () => {
   return (
     <div>
@@ -126,9 +128,8 @@ const Login = () => {
             </form>
           </div>
           <div className="flex justify-center items-center mt-6">
-            <a
-              href="#"
-              target="_blank"
+            <NavLink
+              to={"/register"}
               className="inline-flex items-center font-bold text-blue-500 hover:text-blue-700 text-xs text-center"
             >
               <span>
@@ -145,7 +146,7 @@ const Login = () => {
                 </svg>
               </span>
               <span className="ml-2">You don't have an account?</span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>
