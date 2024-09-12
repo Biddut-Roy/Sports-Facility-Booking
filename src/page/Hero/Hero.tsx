@@ -1,6 +1,8 @@
+import { NavLink } from "react-router-dom";
+
 const Hero = () => {
   return (
-    <div className=" pt-10">
+    <div className="pt-10">
       <div className="flex flex-wrap">
         <div className="w-full sm:w-8/12 mb-10">
           <div className="container mx-auto h-full sm:p-10">
@@ -28,8 +30,11 @@ const Hero = () => {
                   and get a price estimate. You can upload the information we
                   need to make your booking experience as smooth as possible.
                 </p>
-                <button className="bg-green-500 text-white text-2xl font-medium px-4 py-2 rounded shadow">
-                  Book Now
+                <button
+                  type="button"
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <NavLink to={"/"}>Book Now</NavLink>
                 </button>
               </div>
             </header>

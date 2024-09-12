@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="sm:px-0 md:px-5 lg:px-20">
-      <footer className="bg-[#252941] text-white py-10  ">
+    <div className="sm:px-0 md:px-10 bg-blue-50 dark:bg-slate-800 text-white ">
+      <footer className=" py-10  ">
         <div className=" px-4 flex flex-wrap justify-between ">
           {/* Logo and Description */}
           <div className="w-full md:w-1/4 mb-8 md:mb-0">
@@ -92,7 +92,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="mt-4 w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 rounded"
+                className="mt-4 w-full  text-white  py-2  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
                 Subscribe
               </button>
