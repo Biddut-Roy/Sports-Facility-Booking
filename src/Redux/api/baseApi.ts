@@ -7,6 +7,13 @@ export const baseApi = createApi({
   }),
   tagTypes: [],
   endpoints: (builder) => ({
+    userCreate: builder.mutation({
+      query: (data) => ({
+        url: "/api/auth/signup",
+        method: "POST",
+        body: data,
+      }),
+    }),
     getCategory: builder.query({
       query: () => ({
         url: "/category/get",
@@ -23,4 +30,8 @@ export const baseApi = createApi({
   }),
 });
 
-export const { useGetCategoryQuery, useAddProductMutation } = baseApi;
+export const {
+  useUserCreateMutation,
+  useGetCategoryQuery,
+  useAddProductMutation,
+} = baseApi;
