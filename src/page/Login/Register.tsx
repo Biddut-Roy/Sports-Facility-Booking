@@ -1,13 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useUserCreateMutation } from "../../Redux/api/baseApi";
 
 const Register = () => {
+  const [createUser, { data }] = useUserCreateMutation();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
     phone: "",
+    address: "",
+    role: "user",
   });
 
   const handleChange = (e: any) => {
@@ -19,8 +24,8 @@ const Register = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(formData);
-    // You can now send formData to your server or handle it as needed
+    createUser(formData);
+    console.log(data);
   };
 
   return (
@@ -165,7 +170,6 @@ const Register = () => {
                       </svg>
                     </span>
                   </div>
-
                   <input
                     id="phone"
                     type="phone"
@@ -173,6 +177,44 @@ const Register = () => {
                     className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
                     placeholder="Phone Number"
                     value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col mb-6">
+                <label
+                  htmlFor="address"
+                  className="mb-1 text-xs sm:text-sm tracking-wide text-gray-600"
+                >
+                  Address:
+                </label>
+                <div className="relative">
+                  <div className="inline-flex items-center justify-center absolute left-0 top-0 h-full w-10 text-gray-400">
+                    <span>
+                      <svg
+                        className="h-6 w-6"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <input
+                    id="address"
+                    type="text"
+                    name="address"
+                    className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
+                    placeholder="Address"
+                    value={formData.address}
                     onChange={handleChange}
                   />
                 </div>
