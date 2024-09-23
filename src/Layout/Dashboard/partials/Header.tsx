@@ -3,7 +3,17 @@ import Help from "../components/DropdownHelp";
 import UserMenu from "../components/DropdownProfile";
 import ThemeToggle from "../components/ThemeToggle";
 
-function Header({ sidebarOpen, setSidebarOpen, variant = "default" }) {
+interface HeaderProps {
+  sidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
+  variant?: string;
+}
+
+function Header({
+  sidebarOpen,
+  setSidebarOpen,
+  variant = "default",
+}: HeaderProps) {
   return (
     <header
       className={`sticky top-0 before:absolute before:inset-0 before:backdrop-blur-md max-lg:before:bg-white/90 dark:max-lg:before:bg-gray-800/90 before:-z-10 z-30  ${
