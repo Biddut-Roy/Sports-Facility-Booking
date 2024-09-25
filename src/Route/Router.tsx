@@ -6,6 +6,7 @@ import Register from "../page/Login/Register";
 import Error from "../page/error/Error";
 import Login from "../page/Login/Login";
 import CreateAdmin from "../Layout/Dashboard/components/CreateAdmin";
+import Table from "../Layout/Dashboard/components/Table";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/admin",
         element: <CreateAdmin />,
+      },
+      {
+        path: "/dashboard/table",
+        element: <Table />,
       },
     ],
   },
