@@ -7,6 +7,8 @@ import Error from "../page/error/Error";
 import Login from "../page/Login/Login";
 import CreateAdmin from "../Layout/Dashboard/components/CreateAdmin";
 import Table from "../Layout/Dashboard/components/Table";
+import Contact from "../page/Contact/Contact";
+import Facility from "../page/Facility/Facility";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/facility",
+        element: <Facility />,
       },
     ],
   },
