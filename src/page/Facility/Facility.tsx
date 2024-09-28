@@ -1,4 +1,9 @@
+import { useGetFacilityQuery } from "../../Redux/api/baseApi";
+
 const Facility = () => {
+  const { data, error, isLoading } = useGetFacilityQuery();
+  console.log(data);
+
   return (
     <div className="pt-10">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">

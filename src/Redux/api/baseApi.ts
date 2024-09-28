@@ -14,9 +14,9 @@ export const baseApi = createApi({
         body: data,
       }),
     }),
-    getCategory: builder.query({
+    getFacility: builder.query({
       query: () => ({
-        url: "/category/get",
+        url: "/api/facility/",
         method: "GET",
       }),
     }),
@@ -32,6 +32,6 @@ export const baseApi = createApi({
 
 export const {
   useUserCreateMutation,
-  useGetCategoryQuery,
+  useGetFacilityQuery,
   useAddProductMutation,
 } = baseApi;
