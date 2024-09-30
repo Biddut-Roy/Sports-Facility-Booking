@@ -7,21 +7,21 @@ const Gallery = () => {
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+              src="https://i.ibb.co/DzWLLWJ/Canyon-Adventure-Park.jpg"
             />
           </div>
           <div className="w-1/2 p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+              src="https://i.ibb.co/fQS0Yh6/images-2.jpg"
             />
           </div>
           <div className="w-full p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              src="https://i.ibb.co/7Y9WdNZ/images-1.jpg"
             />
           </div>
         </div>
@@ -30,21 +30,21 @@ const Gallery = () => {
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
+              src="https://i.ibb.co/wLWnbJZ/polar.jpg"
             />
           </div>
           <div className="w-1/2 p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
+              src="https://i.ibb.co/59RWbVr/wepik-hamid.jpg"
             />
           </div>
           <div className="w-1/2 p-1 md:p-2">
             <img
               alt="gallery"
               className="block h-full w-full rounded-lg object-cover object-center"
-              src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"
+              src="https://i.ibb.co/LYXqc9Q/Oceano-Dunes.jpg"
             />
           </div>
         </div>

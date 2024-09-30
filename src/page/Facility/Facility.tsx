@@ -23,6 +23,7 @@ const Facility = () => {
       </div>
     );
   }
+  console.log(data);
 
   return (
     <div className="pt-10">

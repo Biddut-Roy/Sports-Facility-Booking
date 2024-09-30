@@ -6,7 +6,6 @@ import { toast, Toaster } from "sonner";
 const FacilityCard = () => {
   const { id } = useParams();
   const { data, error, isLoading } = useGetFacilityQuery(undefined);
-  console.log(id);
 
   if (isLoading) {
     toast("Please wait a second before");

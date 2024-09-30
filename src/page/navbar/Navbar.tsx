@@ -111,6 +111,20 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to={"/dashboard"}
+                  className={({ isActive }) =>
+                    `block py-2 px-3 rounded md:p-0 ${
+                      isActive
+                        ? " hover:bg-gray-100 md:hover:bg-transparent text-blue-700 md:dark:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                        : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    }`
+                  }
+                >
+                  Dashboard
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
