@@ -14,6 +14,13 @@ export const baseApi = createApi({
         body: data,
       }),
     }),
+    logInUser: builder.mutation({
+      query: (data) => ({
+        url: "/api/auth/login",
+        method: "POST",
+        body: data,
+      }),
+    }),
     getFacility: builder.query({
       query: () => ({
         url: "/api/facility/",
@@ -32,6 +39,7 @@ export const baseApi = createApi({
 
 export const {
   useUserCreateMutation,
+  useLogInUserMutation,
   useGetFacilityQuery,
   useAddProductMutation,
 } = baseApi;

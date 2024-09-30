@@ -71,7 +71,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/"
+                  to="/about"
                   className={({ isActive }) =>
                     `block py-2 px-3 rounded md:p-0 ${
                       isActive

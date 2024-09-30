@@ -1,13 +1,34 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useLogInUserMutation } from "../../Redux/api/baseApi";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const [loginUser, { data }] = useLogInUserMutation();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = {
+      email,
+      password,
+    };
+
+    try {
+      await loginUser(formData);
+    } catch (err) {
+      console.error("Login failed:", err);
+    }
+  };
+  console.log(data);
+
   return (
     <div>
       <link
         rel="stylesheet"
         href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
       />
-
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-300">
         <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-md w-full max-w-md">
           <div className="font-medium self-center text-xl sm:text-2xl uppercase text-gray-800">
@@ -27,7 +48,7 @@ const Login = () => {
             </div>
           </div>
           <div className="mt-10">
-            <form action="#">
+            <form onSubmit={handleSubmit}>
               <div className="flex flex-col mb-6">
                 <label
                   htmlFor="email"
@@ -49,11 +70,12 @@ const Login = () => {
                       <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                     </svg>
                   </div>
-
                   <input
                     id="email"
                     type="email"
                     name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
                     placeholder="E-Mail Address"
                   />
@@ -82,11 +104,12 @@ const Login = () => {
                       </svg>
                     </span>
                   </div>
-
                   <input
                     id="password"
                     type="password"
                     name="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
                     placeholder="Password"
                   />

@@ -10,6 +10,7 @@ import Table from "../Layout/Dashboard/components/Table";
 import Contact from "../page/Contact/Contact";
 import Facility from "../page/Facility/Facility";
 import FacilityCard from "../page/Facility/FacilityCard";
+import About from "../page/about/About";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Landing />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/register",
