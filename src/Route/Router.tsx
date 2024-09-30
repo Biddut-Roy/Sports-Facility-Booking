@@ -9,6 +9,7 @@ import CreateAdmin from "../Layout/Dashboard/components/CreateAdmin";
 import Table from "../Layout/Dashboard/components/Table";
 import Contact from "../page/Contact/Contact";
 import Facility from "../page/Facility/Facility";
+import FacilityCard from "../page/Facility/FacilityCard";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/facility",
         element: <Facility />,
+      },
+      {
+        path: "/facilityCard/:id",
+        element: <FacilityCard />,
       },
     ],
   },

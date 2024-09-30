@@ -23,6 +23,7 @@ const Facility = () => {
       </div>
     );
   }
+
   return (
     <div className="pt-10">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
@@ -100,12 +101,13 @@ const Facility = () => {
 
                 <span className="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
                   <span className="ml-1">
-                    {" "}
                     <button
                       type="button"
                       className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
-                      <NavLink to={"/"}>View Card </NavLink>{" "}
+                      <NavLink to={`/facilityCard/${item?._id}`}>
+                        View Card{" "}
+                      </NavLink>{" "}
                     </button>
                   </span>
                 </span>
